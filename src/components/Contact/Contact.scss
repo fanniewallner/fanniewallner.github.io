@@ -1,0 +1,48 @@
+.contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+}
+
+.socials {
+    margin-top: 20px;
+}
+
+.cv {
+    color: blank;
+}
+
+.contact__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contact__title.show {
+    animation: slideInFromLeft 0.9s ease forwards;
+  }
+  
+  .contact__text.show {
+    animation: slideInFromRight 0.9s ease forwards;
+  }
+
+
+@keyframes slideInFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .contact {
+      grid-template-columns: 1fr ;
+      padding: 100px;
+    }
+  }

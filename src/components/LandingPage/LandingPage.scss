@@ -1,0 +1,67 @@
+.landingPage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .landingPage__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0;
+  }
+
+  .landingPage__title.show {
+    animation: slideInFromLeft 0.9s ease forwards;
+  }
+  
+  
+  .landingPage__text {
+    font-size: 1rem;
+    opacity: 0;
+  }
+
+  .landingPage__text.show {
+    animation: slideInFromRight 0.9s ease forwards;
+  }
+  
+
+  
+  @keyframes slideInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+// .landingPage {
+// margin-bottom: 10px;
+
+// &__title {
+//     padding: 20px;
+// }
+
+// }
+
+// .header {
+//     margin-top: 0;
+//     height: 100px;
+//     background-color: palevioletred;
+// }
