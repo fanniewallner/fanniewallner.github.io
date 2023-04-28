@@ -2,6 +2,7 @@
   max-width: 1280px;
   //padding: 10% 0% 10% 20%;
   margin: 0 auto;
+  height: 100%;
   //padding: 2rem;
   text-align: center;
   scroll-behavior: smooth;
@@ -10,9 +11,10 @@
 
 body {
   box-sizing: border-box;
-  height: 100vh;
+  //height: 100%;
   margin: 0;
   font-family: 'Libre Baskerville', serif;
+  position: relative;
 }
 
 .desktop-menu {

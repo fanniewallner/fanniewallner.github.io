@@ -1,4 +1,6 @@
 import './App.scss'
+import './index.scss'
+import './components/Navigation/Navigation.scss'
 import LandingPage from './components/LandingPage/LandingPage'
 import { Link, Navigate, Route, Routes } from 'react-router-dom'
 import { FaHome } from 'react-icons/fa'
@@ -15,6 +17,7 @@ function App() {
   return (
     <>
     
+    
     <nav className="desktop-menu">
       <div className='menu-item'>
       <span className="menu-item-text"><Link to="/LandingPage">{<FaHome/>}</Link></span>
@@ -28,17 +31,15 @@ function App() {
         <div className='menu-item'>
         <span className="menu-item-text"><Link to="/Contact">{<FiMail/>}</Link></span>
         </div>
-    </nav>
+    </nav> 
 
 <Routes>
   <Route path="/" element={<Navigate to="/LandingPage" />} />
   <Route path="/LandingPage" element={<LandingPage/>}></Route>
   <Route path="/About" element={<About/>}></Route>
   <Route path="/Portfolio" element={<Portfolio/>}></Route>
-  <Route path="/Contact" element={<Contact/>}></Route>
-        
+  <Route path="/Contact" element={<Contact/>}></Route>  
 </Routes>
-
     </>
   )
 }

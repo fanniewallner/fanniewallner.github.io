@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import "./LandingPage.scss"
+import Navigation from "../Navigation/Navigation";
 
 function LandingPage () {
     const [show, setShow] = useState(false)
