@@ -45,30 +45,51 @@
     }
   }
   
+  @media (min-width: 768px) {
 
-  
- @media screen and (min-width: 601px) {
-    .desktop-menu {
-        .menu-item {
-            width: 9rem;
-            height: 9rem;
-        }
-        
-        &:hover {
-           width: 8.5rem;
-           height: 8.5rem;
-           background-color: palevioletred;
-           font-size: 2rem;
-         }
-     
-         .menu-item-text {
-           position: absolute;
-           font-size: 2rem;
-           top: 50%;
-           left: 50%;
-           transform: translate(-50%, -50%);
-           white-space: nowrap;
-         }
-    }
+       .desktop-menu{
+         width: 100%;
+
     
-    }
+         .menu-item {
+           width: 7rem;
+           height: 7rem;
+    
+           &:hover {
+             width: 7.5rem;
+             height: 7.5rem;
+           }
+    
+           .menu-item-text {
+             font-size: 3rem;
+           }
+         }
+    
+    
+       }
+     }
+  
+//  @media screen and (min-width: 601px) {
+//     .desktop-menu {
+//         .menu-item {
+//             width: 7rem;
+//             height: 7rem;
+//         }
+        
+//         &:hover {
+//            width: 6.5rem;
+//            height: 6.5rem;
+//            font-size: 2rem;
+//          }
+     
+//          .menu-item-text {
+//            position: absolute;
+//            font-size: 2rem;
+//            top: 50%;
+//            left: 50%;
+//            transform: translate(-50%, -50%);
+//            white-space: nowrap;
+//          }
+//     }
+    
+//     }

@@ -6,11 +6,17 @@
   //padding: 2rem;
   text-align: center;
   scroll-behavior: smooth;
+  background-color:rgb(248, 216, 222);
   //padding-bottom: 26%;
+
+  @media (min-width: 768px) {
+height: 100vh;
+  }
 }
 
 body {
   box-sizing: border-box;
+  background-color:rgb(248, 216, 222);
   //height: 100%;
   margin: 0;
   font-family: 'Libre Baskerville', serif;
@@ -77,28 +83,28 @@ h1 {
 }
 
 
-@media (min-width: 768px) {
+// @media (min-width: 768px) {
 
-  .desktop-menu{
-    width: 100%;
+//   .desktop-menu{
+//     width: 100%;
 
-    .menu-item {
-      width: 7rem;
-      height: 7rem;
+//     .menu-item {
+//       width: 7rem;
+//       height: 7rem;
 
-      &:hover {
-        width: 7.5rem;
-        height: 7.5rem;
-      }
+//       &:hover {
+//         width: 7.5rem;
+//         height: 7.5rem;
+//       }
 
-      .menu-item-text {
-        font-size: 3rem;
-      }
-    }
+//       .menu-item-text {
+//         font-size: 3rem;
+//       }
+//     }
 
 
-  }
-}
+//   }
+// }
 
 // .header {
 //   background-color: rgba(216, 112, 147, 0.484);
