@@ -15,7 +15,7 @@ return (
     <div className="about">
         <h1>About me</h1>
         <div className="profileWrapper">
-        <img className="profile" src="/public/assets/2.jpg"/>
+        <img className="profile" src="/assets/2.jpg"/>
         </div>
         <span>I have had an interest in web development for a couple of years and I have previously worked in health care and the event business amongst other occupations but I have now choosen to take the next leap in my career dreams to become a front end developer.  </span>
     </div>
