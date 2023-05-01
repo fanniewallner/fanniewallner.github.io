@@ -1,31 +1,50 @@
-import React from "react";
+
 import "./Navigation.scss";
 import { FaHome,  } from "react-icons/fa";
 import { FiUser, FiMail } from "react-icons/fi";
 import { IoMdCodeWorking } from "react-icons/io";
-import {Routes, Route, Link} from "react-router-dom"
-import LandingPage from "../LandingPage/LandingPage";
-import About from "../About/About";
-import Portfolio from "../Portfolio/Portfolio";
-import Contact from "../Contact/Contact";
-
+import { Link} from "react-router-dom"
 function Navigation() {
   return (
     <>
     <nav className="desktop-menu">
-        <span className="menu-item-text"><Link to="/LandingPage">{<FaHome/>}</Link></span>
+<span className="menu-item"><Link to="/" className="menu-item-text">{<FaHome/>}</Link></span>
+
+  <span className="menu-item"><Link to="/about" className="menu-item-text">{<FiUser/>}</Link></span>
+     
+
+  <span className="menu-item"><Link to="/portfolio" className="menu-item-text">{<IoMdCodeWorking/>}</Link></span>
+
+
+  <span className="menu-item"><Link to="/contact" className="menu-item-text">{<FiMail/>}</Link></span>
+
+</nav> 
+    {/* <nav className="desktop-menu">
+            <span className="menu-item-text">
+            <Link to="/">{<FaHome/>}</Link>
+            </span>
+            <span className="menu-item-text">
+            <Link to="/about">{<FiUser/>}</Link>
+            </span>
+            <span className="menu-item-text">
+            <Link to="/portfolio">{<IoMdCodeWorking/>}</Link>
+            </span>
+            <span className="menu-item-text">
+            <Link to="/contact">{<FiMail/>}</Link>
+            </span> */}
+        {/* <span className="menu-item-text"></span>
         <span className="menu-item-text"><Link to="/LandingPage">{<FiUser/>}</Link></span>
         <span className="menu-item-text"><Link to="/LandingPage">{<IoMdCodeWorking/>}</Link></span>
-        <span className="menu-item-text"><Link to="/LandingPage">{<FiMail/>}</Link></span>
-    </nav>
+        <span className="menu-item-text"><Link to="/LandingPage">{<FiMail/>}</Link></span> */}
 
-<Routes>
+
+{/* <Routes>
     <Route path="/home" element={<LandingPage/>}></Route>
     <Route path="/about" element={<About/>}></Route>
     <Route path="/portfolio" element={<Portfolio/>}></Route>
     <Route path="/contact" element={<Contact/>}></Route>
         
-</Routes>
+</Routes> */}
 
     </>
   );
@@ -62,3 +81,5 @@ function Navigation () {
 
 export default Navigation;
 */
+
+

@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsPersonVcardFill } from "react-icons/bs";
 import './Contact.scss'
 import { useEffect, useState } from "react";
+import Navigation from "../Navigation/Navigation";
 
 const iconStyles = {color: "palevioletred", fontSize: "2.5rem"}
 
@@ -26,6 +27,7 @@ return (
         <a target="_blank" href="https://www.dropbox.com/s/ptstl2tu2o5g134/Fannie%20Wallner.pdf?dl=0">{<BsPersonVcardFill style={iconStyles}/>}</a>
         </div>
     </div>
+    <Navigation></Navigation>
     </>
 )
 }

@@ -1,5 +1,5 @@
 import './ProjectCard.scss'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 interface ProjectCardProps {
     title: string,
@@ -14,7 +14,7 @@ function ProjectCard ({title, img, description, tryLink, gitLink}: ProjectCardPr
     return (
         <>
         <div className="card" onMouseEnter={() => setShow(true)} onMouseLeave={()=> setShow(false)}>
-            <div className='card__image'><img className='card__image--styling' src={img}/>  {show && (
+            <div className='card__image'><img className='card__image--styling' src={img} alt="screenshot of project" title='screenshot of project'/>  {show && (
                     <div className={`card__desc ${show ? 'card__desc--slide' : ''}`}>
                     <div className='card__btnContainer'>
                     <a href={tryLink} target="_blank">
